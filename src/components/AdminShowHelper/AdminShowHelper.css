@@ -1,0 +1,13 @@
+.colStyle{
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.tableInfosStyle{
+    padding:10px 0px 10px 35px;
+}
+
+.trashLogoSize{
+    height:30px;
+}

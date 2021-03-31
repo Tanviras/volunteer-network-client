@@ -1,0 +1,19 @@
+.imgSize{
+    height:80px;
+    margin-top:20px;
+    margin-left:37%;
+    margin-right:35%;
+}
+
+.registrationBox{
+    width:545px;
+    height:410px;
+    border:1px solid black;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:45px;
+    background-color: white;
+    padding-left:35px;
+    padding-top:10px;
+    padding-right:35px;
+}

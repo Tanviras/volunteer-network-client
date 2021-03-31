@@ -1,0 +1,68 @@
+.headerText{
+    margin-left:35px;
+}
+
+.articleSize{
+    height:538px;
+    background-color:rgb(228, 241, 248);
+    width: 1020px;
+}
+
+.articleInner{
+    height:450px;
+    background-color: white;
+    margin-left:28px;
+    margin-right: 40px;
+    border-radius:10px;
+}
+
+.tableHeader{
+    padding:10px 0px 10px 35px;
+}
+
+.tableHeaderbg{
+    height:fit-content;
+    background-color:rgb(228, 241, 248);
+    margin-left:28px;
+    margin-right: 28px;
+    border-radius:10px;
+}
+
+.logoSize{
+    height:23px;
+}
+
+a:hover{
+    background-color:honeydew;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:active{
+    background-color:honeydew;
+}
+
+.linkColor{
+    color:black;
+}
+
+.linkColor:hover{
+    color:blue;
+}
+
+.spanPadding{
+    border:1px solid white;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.tableInfos{
+    height: fit-content;
+    margin-left:25px;
+    margin-right: 28px;
+    border-radius:10px;
+}
+
+.tableInfosStyle{
+    padding:10px 0px 10px 43px;
+}
