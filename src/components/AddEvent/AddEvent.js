@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Navbar, Row } from "react-bootstrap";
 import logo from '../../logos/Group-1329.png';
 import '../Admin/Admin.css';
+import './AddEvent.css';
 import usersLogo from '../../logos/users-alt 1.png';
 import addUser from '../../logos/plus 1.png';
 import { useForm } from "react-hook-form";
@@ -10,18 +11,12 @@ import { ErrorMessage } from "@hookform/error-message";
 
 
 const AddEvent = () => {
-    const [activities, setActivities] = useState([]);
     const { register, handleSubmit, errors } = useForm();
     const history = useHistory();
 
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/userVolunteers')
-    //         .then(res => res.json())
-    //         .then(data => setActivities(data))
-    // });
-
     const onSubmit = (values) => {//connection with server
-        fetch("http://localhost:5000/addUserActivity", {//this should be changed
+
+        fetch("http://localhost:5000/addEvent", {//this should be changed
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(values),
@@ -31,7 +26,7 @@ const AddEvent = () => {
                 console.log(data);
 
                 if (data) {
-                    history.push("/selectedActivities");
+                    history.push("/home");
                 }
 
             });
@@ -86,7 +81,7 @@ const AddEvent = () => {
                     <div className='articleSize'>
                         <br />
 
-                        <div className='articleInner'>
+                        <div className='articleInnerAddEvent'>
                             <br />
 
                             <div>
@@ -135,16 +130,18 @@ const AddEvent = () => {
                                     </Row>
 
                                     <Row>
-                                    <Col>
+                                        <Col>
                                             <div className="form-group">
                                                 <label htmlFor="description">Description</label>
+                                                
                                                 <input
                                                     name="description"
                                                     placeholder="Write something"
-                                                    // defaultValue={loggedInUser.name}
                                                     className={`form-control`}
                                                     ref={register({ required: "Description is required" })}
                                                 />
+                                                
+                                               
                                             </div>
                                             <ErrorMessage
                                                 className="invalid-feedback"
@@ -156,24 +153,31 @@ const AddEvent = () => {
 
                                         <Col>
                                             <div className="form-group">
-                                                <label htmlFor="banner">Banner</label>
+                                                <label htmlFor="picture">Banner</label>
                                                 <input
-                                                    name="banner"
-                                                    placeholder="Upload Image"
-                                                    // defaultValue={loggedInUser.name}
+                                                    name="picture"
+                                                    type="file"
                                                     className={`form-control`}
-                                                    ref={register({ required: "Banner is required" })}
+                                                    ref={register({ required: "picture is required" })}
                                                 />
+                                                {/* <br/>
+                                                <button className="btn btn-secondary">Upload Image</button> */}
                                             </div>
+                                          
+
                                             <ErrorMessage
                                                 className="invalid-feedback"
-                                                name="banner"
+                                                name="picture"
                                                 as="div"
                                                 errors={errors}
                                             />
                                         </Col>
 
                                     </Row>
+
+                                    <button className="btn btn-primary" type='submit'>
+                                        Submit
+                                    </button>
 
                                 </form>
 

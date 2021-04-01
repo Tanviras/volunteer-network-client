@@ -17,3 +17,18 @@
     padding-top:45px;
     padding-right:35px;
 }
+
+.articleSizeAddEvent{
+    height:538px;
+    background-color:rgb(228, 241, 248);
+    width: 1020px;
+}
+
+.articleInnerAddEvent{
+    height:450px;
+    background-color: white;
+    margin-left:28px;
+    margin-right: 40px;
+    border-radius:10px;
+    padding:10px;
+}
