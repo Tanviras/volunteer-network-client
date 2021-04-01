@@ -52,14 +52,9 @@ const Login = () => {
            <div className='loginBox'>
            <h2> Login With</h2>
 
-           <div className='googleBox'>
-              
-              <button onClick={handleGoogleSignIn}> 
+           <div className='googleBox' onClick={handleGoogleSignIn}>
               <img src={googleLogo} alt='googleLogo' className='googleLogo'/>
                <span className='writing'>Continue with Google</span>
-              </button>
-               
-
            </div>
 
            </div>

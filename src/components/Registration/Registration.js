@@ -30,12 +30,6 @@ const Registration = () => {
           });
       };
 
-
-
-
-
-
-
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     const {id}=useParams();
@@ -69,6 +63,8 @@ const Registration = () => {
                         as="div"
                         errors={errors}
                     />
+
+
                     <div className="form-group">
                         {/* <label htmlFor="">Email</label> */}
                         <input
@@ -84,6 +80,7 @@ const Registration = () => {
                                 },
                             })}
                         />
+
                         <ErrorMessage
                             className="invalid-feedback"
                             name="email"
@@ -91,6 +88,8 @@ const Registration = () => {
                             errors={errors}
                         />
                     </div>
+
+
                     <div className="form-group">
                         {/* <label htmlFor="date">Date</label> */}
                         <input
@@ -100,6 +99,7 @@ const Registration = () => {
                             className={`form-control`}
                             ref={register({ required: "Date is required" })}
                         />
+
                         <ErrorMessage
                             className="invalid-feedback"
                             name="date"
@@ -107,6 +107,8 @@ const Registration = () => {
                             errors={errors}
                         />
                     </div>
+
+
                     <div className="form-group">
                         {/* <label htmlFor="description">Description</label> */}
                         <input
@@ -115,6 +117,8 @@ const Registration = () => {
                             className={`form-control`}
                             ref={register({ required: "Description is required" })}
                         />
+
+
                         <ErrorMessage
                             className="invalid-feedback"
                             name="description"
@@ -122,6 +126,8 @@ const Registration = () => {
                             errors={errors}
                         />
                     </div>
+
+
                     <div className="form-group">
                         {/* <label htmlFor="selectedActivity">Selected Activity</label> */}
                         <input
@@ -139,9 +145,12 @@ const Registration = () => {
                             errors={errors}
                         />
                     </div>
+
+
                     <button className="btn btn-primary btn-block" type='submit'>
                         Submit
-                 </button>
+                    </button>
+
                 </form>
 
             </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import trashIcon from '../../logos/trashIcon.png';
 import './AdminShowHelper.css';
-import { Button } from "react-bootstrap";
 
 const AdminShowHelper = (props) => {
     const {fullName,email,date,selectedActivity}=props.activity;
