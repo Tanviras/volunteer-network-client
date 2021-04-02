@@ -16,3 +16,17 @@ Users can cancel their booked work if they wish
 ## As an admin
 An admin can remove any volunteer if he/she wants
 An admin can add an event by giving event name,date & other necessary details
+
+## Technologies
+ReactJS
+React Router
+React Form
+Firebase Authentication
+Material UI
+Bootstrap
+HTML/CSS etc. 
+
+##Installation
+Download or clone the git. Then run
+
+npm install
