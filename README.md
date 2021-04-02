@@ -26,7 +26,7 @@ Material UI
 Bootstrap
 HTML/CSS etc. 
 
-##Installation
+## Installation
 Download or clone the git. Then run
 
 npm install
