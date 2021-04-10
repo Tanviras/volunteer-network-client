@@ -18,13 +18,13 @@ Volunteer-Network-Client is a working front-end application that can meet the ne
 2. An admin can add an event by giving event name,date & other necessary details
 
 ## Technologies
--ReactJS
--React Router
--React Form
--Firebase Authentication
--Material UI
--Bootstrap
--HTML/CSS etc. 
+- ReactJS
+- React Router
+- React Form
+- Firebase Authentication
+- Material UI
+- Bootstrap
+- HTML/CSS etc. 
 
 ## Installation
 Download or clone the git. Then run
